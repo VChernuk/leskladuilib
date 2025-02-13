@@ -1,3 +1,13 @@
+package com.kophe.leskladuilib.deliverynotes.adapter
+
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+import com.kophe.leskladlib.repository.common.DeliveryNote
+import com.kophe.leskladuilib.R
+
 class DeliveryNotesAdapter(
     private val deliveryNotes: List<DeliveryNote>,
     private val onItemClick: (DeliveryNote) -> Unit
@@ -6,14 +16,12 @@ class DeliveryNotesAdapter(
     inner class DeliveryNoteViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val numberTextView: TextView = itemView.findViewById(R.id.tvDeliveryNoteNumber)
         private val dateTextView: TextView = itemView.findViewById(R.id.tvDeliveryNoteDate)
-        private val departmentTextView: TextView = itemView.findViewById(R.id.tvDeliveryNoteDepartment)
         private val signatoryTextView: TextView = itemView.findViewById(R.id.tvDeliveryNoteSignatory)
 
         fun bind(deliveryNote: DeliveryNote) {
-            numberTextView.text = deliveryNote.number
-            dateTextView.text = deliveryNote.date
-            departmentTextView.text = deliveryNote.department
-            signatoryTextView.text = deliveryNote.signatory
+            numberTextView.text = deliveryNote.dn_number ?: "-"
+            dateTextView.text = deliveryNote.date?.toString() ?: "-"
+            signatoryTextView.text = deliveryNote.responsible_person ?: "-"
             itemView.setOnClickListener { onItemClick(deliveryNote) }
         }
     }
