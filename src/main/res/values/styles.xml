@@ -1,0 +1,41 @@
+<resources>
+
+    <style name="defaultText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="defaultTextAccented" parent="defaultText">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="defaultSpinner" parent="Base.Widget.AppCompat.Spinner">
+        <item name="android:paddingTop">@dimen/spacing_small</item>
+        <item name="android:paddingBottom">@dimen/spacing_small</item>
+    </style>
+
+    <style name="listItemTextView" parent="defaultText">
+        <item name="android:paddingLeft">@dimen/spacing_medium</item>
+        <item name="android:paddingRight">@dimen/spacing_medium</item>
+        <item name="android:paddingTop">@dimen/spacing_medium</item>
+        <item name="android:paddingBottom">@dimen/spacing_medium</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="defaultButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/bg_button_default</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="horizontalDivider">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/defaultGrey</item>
+    </style>
+
+    <style name="Widget.Theme.Le_sklad.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+</resources>

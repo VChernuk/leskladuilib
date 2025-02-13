@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="itemBackground">#ffffff</color>
+    <color name="colorPrimary">#0F0F0F</color>
+    <color name="colorPrimaryDark">#0F0F0F</color>
+    <color name="colorAccent">#FF8B00</color>
+    <color name="colorBlue">#003E6B</color>
+    <color name="colorLightBlue">#77AAE8</color>
+    <color name="colorRed">#bb2525</color>
+    <color name="colorGreen">#8AC932</color>
+    <color name="colorOrange">#F0B428</color>
+    <color name="lightColor">#F0F5F8</color>
+    <color name="defaultGrey">#BCBCBC</color>
+    <color name="darkGrey">#4B4B4B</color>
+    <color name="windowBackground">#f0f0f0</color>
+    <color name="statusBarColor">#0F0F0F</color>
+    <color name="textColor">@android:color/black</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#f29100</color>
+    <color name="teal_700">#b76f04</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="itemBorder">#eaeaea</color>
+    <color name="itemDetails">#959494</color>
+    <color name="random_color">#FF00FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="spinnerItemBack">@color/defaultGrey</color>
+</resources>

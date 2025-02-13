@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">le_sklad ЗРАДн</string>
+    <string name="login">Увійти</string>
+    <string name="username_placeholder">Позивний</string>
+    <string name="log_in">Увійти</string>
+    <string name="loading">Завантаження</string>
+    <string name="default_error_message">Щось пішло не так…</string>
+    <string name="category">Категорія</string>
+    <string name="location">Локація</string>
+    <string name="subcategory">Підкатегорія</string>
+    <string name="apply">Застосувати</string>
+    <string name="clear">Очистити</string>
+    <string name="passing_title">Рух майна %s (%s)</string>
+    <string name="location_to_pass">Отримувач</string>
+    <string name="comment">Коментар</string>
+    <string name="add_items">Додати майно</string>
+    <string name="create_without_barcode">Створити без коду</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="barcode">Barcode</string>
+    <string name="save">Зберегти</string>
+    <string name="cancel">Відмінити</string>
+    <string name="title">Назва</string>
+    <string name="exit">Вихід</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

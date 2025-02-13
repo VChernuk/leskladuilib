@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacing_tiny"
+    android:background="@drawable/bg_rounded_corners_lightgrey_view_background"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_medium">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/defaultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_medium" />
+
+    <!-- Список елементів -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/issuanceItemsList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="afterDescendants"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/spacing_small"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="8"
+        tools:listitem="@layout/item_sublist_row" />
+
+    <TextView
+        android:id="@+id/remainingItemsText"
+        style="@style/defaultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/text_size_medium" />
+
+</LinearLayout>

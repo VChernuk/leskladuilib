@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/spacing_medium"
+        android:paddingRight="@dimen/spacing_small">
+
+        <CheckBox
+            android:id="@+id/selectedCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/defaultText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/spacing_extra_small"
+            android:layout_marginLeft="@dimen/spacing_tiny"
+            android:layout_marginRight="@dimen/spacing_small"
+            android:layout_weight="1"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_medium" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/spacing_extra_small"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/location"
+                style="@style/defaultText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_small"
+                android:text=""
+                android:textColor="@color/itemDetails"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/ownership"
+                style="@style/defaultText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_small"
+                android:text=""
+                android:textColor="@color/itemDetails"
+                android:textSize="@dimen/text_size_medium" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalDivider"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>
