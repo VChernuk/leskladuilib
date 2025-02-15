@@ -25,12 +25,21 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
+        android:id="@+id/tvDeliveryNoteDepartment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Підрозділ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDeliveryNoteDate"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
         android:id="@+id/tvDeliveryNoteSignatory"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Відповідальний"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDeliveryNoteDate"
+        app:layout_constraintTop_toBottomOf="@id/tvDeliveryNoteDepartment"
         app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

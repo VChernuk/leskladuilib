@@ -17,11 +17,13 @@ import com.kophe.leskladuilib.R
 class DeliveryNoteViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     private val tvDeliveryNoteNumber: TextView = itemView.findViewById(R.id.tvDeliveryNoteNumber)
     private val tvDeliveryNoteDate: TextView = itemView.findViewById(R.id.tvDeliveryNoteDate)
+    private val tvDeliveryNoteDepartment: TextView = itemView.findViewById(R.id.tvDeliveryNoteDepartment)
     private val tvDeliveryNoteSignatory: TextView = itemView.findViewById(R.id.tvDeliveryNoteSignatory)
 
     fun bind(deliveryNote: DeliveryNote, onItemClick: (DeliveryNote) -> Unit) {
         tvDeliveryNoteNumber.text = deliveryNote.dn_number
         tvDeliveryNoteDate.text = deliveryNote.date.toString()
+        tvDeliveryNoteDepartment.text = deliveryNote.department
         tvDeliveryNoteSignatory.text = deliveryNote.responsible_person
 
         itemView.setOnClickListener {
