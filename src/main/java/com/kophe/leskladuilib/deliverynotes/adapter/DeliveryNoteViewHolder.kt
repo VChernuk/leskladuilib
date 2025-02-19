@@ -21,10 +21,10 @@ class DeliveryNoteViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
     private val tvDeliveryNoteSignatory: TextView = itemView.findViewById(R.id.tvDeliveryNoteSignatory)
 
     fun bind(deliveryNote: DeliveryNote, onItemClick: (DeliveryNote) -> Unit) {
-        tvDeliveryNoteNumber.text = deliveryNote.dn_number
+        tvDeliveryNoteNumber.text = deliveryNote.number
         tvDeliveryNoteDate.text = deliveryNote.date.toString()
-        tvDeliveryNoteDepartment.text = deliveryNote.department
-        tvDeliveryNoteSignatory.text = deliveryNote.responsible_person
+        tvDeliveryNoteDepartment.text = deliveryNote.location.title
+        tvDeliveryNoteSignatory.text = deliveryNote.responsiblePerson
 
         itemView.setOnClickListener {
             onItemClick(deliveryNote)
