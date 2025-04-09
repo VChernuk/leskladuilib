@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/spacing_tiny"
+    android:background="@drawable/bg_rounded_corners_lightgrey_view_background"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/spacing_medium"
+        android:paddingRight="@dimen/spacing_small">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/defaultText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/spacing_medium"
+            android:layout_marginRight="@dimen/spacing_small"
+            android:layout_weight="1"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_medium" />
+
+        <LinearLayout
+            android:id="@+id/quantityControls"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@android:drawable/btn_minus" />
+
+            <TextView
+                android:id="@+id/quantity"
+                style="@style/defaultText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15" />
+
+            <TextView
+                android:id="@+id/measurement"
+                style="@style/defaultText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="m" />
+
+            <ImageButton
+                android:id="@+id/plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@android:drawable/btn_plus" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/removeItemButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_small"
+            android:layout_marginVertical="@dimen/spacing_small"
+            android:src="@android:drawable/ic_delete" />
+
+    </LinearLayout>
+</FrameLayout>
