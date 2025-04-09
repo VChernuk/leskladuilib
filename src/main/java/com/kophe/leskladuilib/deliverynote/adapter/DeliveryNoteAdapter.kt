@@ -7,7 +7,7 @@ import com.kophe.leskladlib.repository.common.CommonItem
 import com.kophe.leskladlib.repository.common.DeliveryNote
 import com.kophe.leskladuilib.OnItemSelectedListener
 
-class IssuanceAdapter(
+class DeliveryNoteAdapter(
     private val listener: OnItemSelectedListener<DeliveryNote>?,
     private val itemListener: OnItemSelectedListener<CommonItem>?
 ) : Adapter<DeliveryNoteViewHolder>() {
