@@ -12,6 +12,13 @@
     <string name="clear">Очистити</string>
     <string name="passing_title">Рух майна %s (%s)</string>
     <string name="location_to_pass">Отримувач</string>
+    <string name="delivery_note">Накладна</string>
+
+    <string name="delivery_note_number">Номер накладної</string>
+    <string name="delivery_note_signatory">Підписант</string>
+
+    <string name="delivery_note_location_to_pass">Підрозділ</string>
+    <string name="delivery_note_date">Дата підписання</string>
     <string name="comment">Коментар</string>
     <string name="add_items">Додати майно</string>
     <string name="create_without_barcode">Створити без коду</string>

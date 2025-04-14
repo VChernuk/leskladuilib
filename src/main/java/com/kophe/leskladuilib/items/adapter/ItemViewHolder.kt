@@ -22,6 +22,7 @@ class ItemViewHolder(
     private val locationBG = view.findViewById<ImageView>(R.id.locationBG)
     private val subtitle = view.findViewById<TextView>(R.id.subtitle)
     private val ownership = view.findViewById<TextView>(R.id.ownership)
+    private val deliveryNote = view.findViewById<TextView>(R.id.deliverynoteItemsList)
     private val location = view.findViewById<TextView>(R.id.location)
     private val shapeDrawable =
         ContextCompat.getDrawable(itemView.context, R.drawable.bg_round_view)
@@ -39,6 +40,7 @@ class ItemViewHolder(
         }
         itemView.setOnClickListener { listener?.selectItem(item) }
         ownership.text = item.ownershipType?.title
+        deliveryNote
         item.location?.let {
             val colors = listOf(
                 R.color.colorAccent,
